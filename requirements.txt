@@ -6,4 +6,5 @@ opencv-python
 scikit-learn
 catboost
 xgboost
+dill
 #-e.
