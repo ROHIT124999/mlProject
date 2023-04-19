@@ -21,7 +21,7 @@ class DataIngestionConfig:
 class DataIngestion:
     def __init__(self):
         self.ingestion_config=DataIngestionConfig()
-
+#read the dataset and split it into train and test data and store it in a folder called artifacts
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or component")
         try:
@@ -39,7 +39,7 @@ class DataIngestion:
 
             test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
 
-            logging.info("Inmgestion of the data iss completed")
+            logging.info("Ingestion of the data is completed")
 
             return(
                 self.ingestion_config.train_data_path,
